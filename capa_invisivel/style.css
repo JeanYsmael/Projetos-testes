@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto&display=swap');
+
+
+:root {
+    --cor0: #C5D7D9;
+    --cor1: #F28241;
+    --cor2: #2AB0BF;
+    --cor3: #026873;
+    --cor4: #013440;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: var(--cor0);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+main {
+    background-color: var(--cor4);
+}
+
+#titulo h1 {
+    color: var(--cor0);
+    font-family: "red rose", sans-serif;
+    font-size: 2em;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    border: auto;
+}
+
+#titulo span {
+    color: var(--cor1);
+}
+
+#titulo p {
+    color: var(--cor0);
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+
+#titulo button {
+    text-align: center;
+
+}
