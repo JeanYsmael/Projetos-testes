@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Red+Rose:wght@300..700&family=Roboto&display=swap');
+
 
 
 :root {
@@ -16,15 +17,24 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Lexend', Sans-serif;
+}
+
+body {
+    background-color: var(--cor4);
+    padding: 0px 7px;
 }
 
 header {
     background-color: var(--cor0);
     height: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0px 0px 10px 10px;
 }
 
 header img {
@@ -45,6 +55,13 @@ nav a {
 }
 main {
     background-color: var(--cor4);
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
 }
 
 #titulo h1 {
@@ -52,7 +69,6 @@ main {
     font-family: "red rose", sans-serif;
     font-size: 2em;
     padding: 30px 20px 20px 20px;
-    text-align: center;
     border: auto;
 }
 
@@ -64,10 +80,64 @@ main {
     color: var(--cor0);
     font-family: 'Roboto', sans-serif;
     padding: 0px 20px 20px 20px;
-    text-align: center;
 }
 
 #titulo button {
-    text-align: center;
+    background-color: var(--cor1); 
+    color: var(--cor4);   
+    border: none;
+    padding: 0.6rem;
+    margin: 10px auto;
+    border-radius: 7px;
+    cursor: pointer;
+}
 
+#intro {
+    background-color: var(--cor0);
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#intro h1 {
+    font-family: 'red rose', sans-serif;
+    color: var(--cor3); 
+}
+
+#intro .txt h2 {
+    font-family: 'red rose', sans-serif;
+    color: var(--cor3);
+    padding: 30px 0px 0px 0px;
+}
+
+#intro .txt p {
+    color: var(--cor4);
+    padding-top: 15px;
+}
+
+#intro .container {
+    height: 270px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro .cartao {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.349);
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+#intro button {
+    background-color: var(--cor4);
+    color: var(--cor2);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
 }
