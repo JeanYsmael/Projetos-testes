@@ -21,7 +21,6 @@ body {
     background-color: var(--cor1);
     color: var(--cor0);
     max-width: 900px;
-    padding: 50px 50px 0px 50px;
     margin: auto;
 }
 
@@ -29,6 +28,7 @@ header {
     background: url(img/headerbg.jpg) center / cover no-repeat; 
     min-height: 320px;
     padding: 20px;
+    margin: 40px 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,10 @@ header h1 {
     margin: 20px;
 }
 
+main {
+    margin: 20px;
+}
+
 #info {
     background-color: var(--cor2);
     margin: 40px 0;
@@ -104,6 +108,7 @@ header h1 {
 }
 
 .main_txt p {
+    font-size: 1em;
     margin: 20px 0;
     line-height: 25px;
 }
@@ -131,7 +136,6 @@ header h1 {
 
 footer {
     background-color: var(--cor3);
-    margin: 0 -50px;
     text-align: center;
     padding: 5px;
 }
