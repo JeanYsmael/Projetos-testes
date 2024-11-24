@@ -98,18 +98,19 @@ main {
 
 .main_txt h1 {
     font-weight: 600;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.7em;
+    padding: 40px 0 20px 10px;
 }
 
 .main_txt h2 {
     font-weight: 500;
     font-size: 1.3em;
+    padding: 20px 10px 10px 10px;
 }
 
 .main_txt p {
+    color: rgb(211, 211, 211);
     font-size: 1em;
-    margin: 20px 0;
     line-height: 25px;
 }
 
@@ -173,9 +174,15 @@ footer a:hover {
 
     main #info {
         flex-direction: column;
+        align-items: center;
     }
 
-    main #info p {
+    main #info h3 {
+        text-align: center;
+    }
+
+    main #info #tempo_leitura p,
+    main #info #data_publicacao p {
         padding-bottom: 30px;
     }
 
