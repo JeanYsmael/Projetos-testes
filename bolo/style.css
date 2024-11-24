@@ -4,7 +4,7 @@
 
 :root {
     --cor0: #ee81a2;
-    --cor1: #8ddb66;
+    --cor1: #67b440;
     --cor2: #aa7ee3;
     --cor3: #f3df5b;
 }
@@ -22,7 +22,7 @@ main {
 }
 
 header {
-    background-color: var(--cor0);
+    background-color: #f1b0c4;
     color: #fff;
     height: 60px;
     max-width: 1000px;
@@ -45,17 +45,18 @@ header .logo p {
 }
 
 header nav {
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
-    padding-left: 12px;
+    padding-left: 20px;
 }
 
 section#intro {
-    background-color: var(--cor0);
+    /* background-color: var(--cor0); */
+    background-image: linear-gradient(to top, var(--cor0), var(--cor0), var(--cor0), var(--cor0),var(--cor0),var(--cor0), #f1b0c4);
     color: white;
     height: 500px;
     padding: 40px;
@@ -91,6 +92,7 @@ section#intro {
 
 #intro img {
     margin-right: 40px;
+    margin-bottom: 50px;
 }
 
 #sobre {
@@ -115,18 +117,24 @@ section#intro {
     margin-bottom: 150px;
 }
 
-#sobre h2,
-#sobre p {
-    padding: 12px 0 4px 8px;
-    max-width: 300px;
+#sobre .conteiner h2 {
+    padding-top: 10px;
+    font-size: 1.8em;
+    width: 210px;
+}
+
+#sobre .conteiner p {
+    width: 260px;
 }
 
 #sobre img {
     height: 300px;
+    margin-right: 30px;
 }
 
 #vantagem {
     background-color: var(--cor1);
+    color: #fff;
     border-radius: 10px;
     text-align: center;
 }
@@ -146,16 +154,18 @@ section#intro {
 
 #vantagem .conteiner {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #vantagem .caixa {
     text-align: center;
-    background-color: var(--cor3);
+    background-color: #72bb4e;
     padding: 10px;
-    margin: 40px;
-    border: 2px solid #e6ce37;
+    margin: 20px;
+    width: 220px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
 }
 
 #vantagem .caixa h5 {
@@ -174,12 +184,45 @@ section#intro {
 }
 
 blockquote {
-    padding: 160px 40px 10px 34px;
+    padding: 180px 40px 10px 34px;
     font-size: 2em;
 }
 
 #cliente p {
     padding-left: 60px;
-    padding-bottom: 140px;
+    padding-bottom: 180px;
 }
 
+#cadastro {
+    background-color: #f3df5b;
+}
+
+#cadastro .txt {
+    text-align: center;
+    padding: 60px 0 50px 0;
+}
+
+#cadastro .txt h2 {
+    font-family: 'jua', cursive;
+    font-size: 2.2em;
+}
+
+#cadastro .txt p {
+    padding-top: 10px;
+}
+
+#cadastro .conteiner {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+#cadastro .esq img {
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#cadastro dir {
+    margin-right: 100px;
+}
